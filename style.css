@@ -309,7 +309,13 @@ LEADERBOARD
 }
 
 
+.info-container{
 
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:50px;
+    }
 
 
 /* ==========================
