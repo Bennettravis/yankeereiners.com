@@ -1,0 +1,182 @@
+:root{
+  --max-width:1200px;
+  --accent:#1e3a8a;
+  --muted:#6b7280;
+  --card-bg:#fff;
+  --card-radius:12px;
+  --card-height:380px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color:#222;
+  background-color:#f3f3f3;
+  
+
+}
+
+/* container */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:24px;
+}
+
+/* header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  /* gradient + decorative image (logo-1) layered */
+  background-image:
+    linear-gradient(180deg, rgba(17,24,39,0.95), rgba(17,24,39,0.85)),
+    url('assets/horse-running.jpeg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 20px center, center;
+  background-size: 160px auto, cover;
+  color:#fff;
+  backdrop-filter:blur(4px);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:14px 24px;
+}
+.logo img{height:56px;display:block}
+.nav {position:relative}
+.menu-btn{
+  display:none;
+  background:transparent;
+  border:0;
+  color:#fff;
+  font-size:20px;
+}
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.nav-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+.nav-links a[aria-current="page"]{text-decoration:underline}
+
+/* main section */
+.board-section{
+  padding:28px 0 64px;
+}
+.page-title{
+  color:var(--accent);
+  font-size:1.75rem;
+  margin-bottom:8px;
+  text-align:center;
+}
+.lead{
+  color:var(--muted);
+  text-align:center;
+  margin-bottom:20px;
+}
+
+/* cards layout: responsive grid so cards line up in rows */
+.cards-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  align-items:stretch;
+  align-content:start;
+}
+
+/* card: equal height using 100% and flex column */
+.card{
+  background:var(--card-bg);
+  border-radius:var(--card-radius);
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  height:100%;
+  min-height:var(--card-height);
+  overflow:hidden;
+}
+
+/* image and content */
+.card-img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:14px;
+  flex:0 0 auto;
+}
+.card-title{font-size:1.05rem;color:#111;margin-bottom:6px}
+.card-role{color:var(--muted);margin-bottom:8px;font-weight:600}
+.card-contact a{color:var(--accent);text-decoration:none}
+.card-contact a:hover{text-decoration:underline}
+
+/* footer */
+.site-footer{background:#111;color:#fff;padding:28px 0;margin-top:40px;text-align:center}
+.footer-logo{
+  height:48px;
+  margin:0 auto 8px; /* center logo */
+  display:block;
+}
+
+/* center footer heading */
+.site-footer h3{
+  margin:8px 0 12px;
+  text-align:center;
+  font-weight:600;
+}
+/* footer navigation */
+.footer-nav{margin:14px 0 18px}
+.footer-nav ul{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 14px;
+  justify-content:center;
+  align-items:center;
+  padding:0;
+  margin:0;
+}
+.footer-nav a{
+  color:#fff;
+  text-decoration:none;
+  background:rgba(255,255,255,0.04);
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:600;
+  display:inline-block;
+}
+.footer-nav a:hover{background:rgba(255,255,255,0.08)}
+
+
+/* responsive */
+@media (max-width:1000px){
+  .map-grid{grid-template-columns:1fr 340px}
+}
+@media (max-width:800px){
+  .map-grid{grid-template-columns:1fr}
+  .directions{order:2}
+  .map-frame{order:1}
+}
+@media (max-width:640px){
+  .header-inner{padding:12px 16px}
+  .container{padding:16px}
+  .nav-links{display:none;flex-direction:column;background:rgba(0,0,0,0.75);position:absolute;right:8px;top:56px;padding:10px;border-radius:8px}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .event-grid{grid-template-columns:1fr;gap:14px}
+  .event-card{padding:14px;min-height:140px}
+  .event-date{font-size:.8rem;padding:6px 8px}
+  .map-frame iframe{min-height:220px}
+}

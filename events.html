@@ -1,98 +1,108 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yankee Reining Horse Association</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yankee Reining Horse Association — Events</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="YRHA logo"></a>
+      </div>
 
-<header id="header" class="background-img">
-    <div class="container nav-container">
-
-        <div class="logo">
-            <img src="assets/logo.png" alt="YRHA Logo">
-        </div>
-
-        <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="membership.html">Membership</a>
-            <a href="events.html">Events</a>
-            <a href="sponsors.html">Sponsors</a>
-            <a href="boardmembers.html">Board Members</a>
-            <a href="member portal.html">Member login</a>
-        </nav>
-
-        <button id="menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-
+      <nav class="nav">
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="boardmembers.html" aria-current="page">Board Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-
-    <section id="events-page" ></section>
-    <div class="container">
-        <h2>Upcoming Events</h2>
+  <main>
+    <section class="events-section">
+      <div class="container">
+        <h1 class="page-title">Upcoming Events</h1>
+        <p class="lead">Find show dates, locations and event details below.</p>
 
         <div class="event-grid">
-
-            <div class="event-card">
-                <span class="date">JUN 20 - JUN 25  </span>
-                <h3>YRHA LAKE EFFECT</h3>
-                <p>Hamburg, NY</p>
-                <a href="https://nebula.wsimg.com/f370e88e24c39abe7a2972f42f224203?AccessKeyId=054B12123646A686FF98&disposition=0&alloworigin=1"
-                    target="_blank">
-                    Event Details
-                </a>
+          <article class="event-card">
+            <div class="event-meta">
+              <span class="event-date">JUN 20 — JUN 25</span>
+              <h2 class="event-title">YRHA Lake Effect</h2>
+              <p class="event-location">Hamburg, NY</p>
             </div>
-            
-            <div class="event-card">
-                <span class="date">JUL 18</span>
-                <h3>YRHA Summer Spectacular</h3>
-                <p>Hamburg, NY</p>
-                <a href="https://nebula.wsimg.com/f370e88e24c39abe7a2972f42f224203?AccessKeyId=054B12123646A686FF98&disposition=0&alloworigin=1"
-                    target="_blank">
-                    Event Details
-                </a>
-            </div>   
+            <a class="event-link" href="https://nebula.wsimg.com/f370e88e24c39abe7a2972f42f224203?AccessKeyId=054B12123646A686FF98&disposition=0&alloworigin=1" target="_blank" rel="noopener">Event Details</a>
+          </article>
 
+          <article class="event-card">
+            <div class="event-meta">
+              <span class="event-date">JUL 18</span>
+              <h2 class="event-title">YRHA Summer Spectacular</h2>
+              <p class="event-location">Hamburg, NY</p>
+            </div>
+            <a class="event-link" href="https://nebula.wsimg.com/f370e88e24c39abe7a2972f42f224203?AccessKeyId=054B12123646A686FF98&disposition=0&alloworigin=1" target="_blank" rel="noopener">Event Details</a>
+          </article>
         </div>
-        <div class="show-map">
-            <div class="map-container">
 
-            <iframe
-            src="https://www.google.com/maps?q=5600+McKinley+Parkway,+Hamburg,+NY+14075&output=embed"
-            width="50%"
-            height="300"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <section class="show-info">
+          <h2>Show Location</h2>
 
-            
-                <h3>Show Location</h3>
-                <p>Directions: Take the Blasdell Milestrip exit. Make a left after the toll booth, make a right onto McKinley Parkway ( there will be a Chik-Fil-A on your left) The Showplex is about 4 miles down on the right.</p>
-        </div>
-</section>
-<footer>
-    <img src="assets/logo.png" alt="YRHA Logo">
+          <div class="map-grid">
+            <div class="map-frame" aria-hidden="false">
+              <iframe
+                src="https://www.google.com/maps?q=5600+McKinley+Parkway,+Hamburg,+NY+14075&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Show location map"></iframe>
+            </div>
 
+            <div class="directions">
+              <p><strong>Address:</strong> 5600 McKinley Parkway, Hamburg, NY 14075</p>
+              <p>Directions: Take the Blasdell Milestrip exit. Make a left after the toll booth, then a right onto McKinley Parkway (you'll see a Chick‑fil‑A on the left). The Showplex is about 4 miles down on the right.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <img src="assets/logo.png" alt="YRHA logo" class="footer-logo">
     <h3>Yankee Reining Horse Association</h3>
 
-   
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="boardmembers.html">Board Members</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-
-    <p style="margin-top:20px;">© 2026 Yankee Reining Horse Association</p>
+    <p class="copyright">© 2026 Yankee Reining Horse Association</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
-
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav-links');
+    btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+  </script>
 </body>
 </html>

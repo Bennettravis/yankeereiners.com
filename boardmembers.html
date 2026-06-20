@@ -1,116 +1,155 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yankee Reining Horse Association</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yankee Reining Horse Association — Board Members</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="boardmembers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="YRHA logo"></a>
+      </div>
 
-<header id="header" class="background-img">
-    <div class="container nav-container">
-
-        <div class="logo">
-            <img src="assets/logo.png" alt="YRHA Logo">
-        </div>
-
-        <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="membership.html">Membership</a>
-            <a href="events.html">Events</a>
-            <a href="sponsors.html">Sponsors</a>
-            <a href="boardmembers.html">Board Members</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-
-        <button id="menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-
+      <nav class="nav">
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="boardmembers.html" aria-current="page">Board Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section id="board-members">
-   
-    <h2>Board Members</h2>
-    <div class="gold-divider"><span></span></div>
-    <p>Meet the dedicated individuals who serve on the Yankee Reining Horse Association Board of
-<div class="board-members">
-    <div class="board-member">
-        <h3>Courtney Craig </h3>
-        <p>President</p>
-        <p>Email: <a href="mailto:-  yrhacourtney@yahoo.com">yrhacourtney@yahoo.com
-          </div>
-    <div class="board-member">      
-        <h3>Duke Dygert </h3>
-        <p>Vice President</p>
-        <p>Email: <a href="mailto:-rddygert@gmail.com">rddygert@gmail.com
-          </div>
-    <div class="board-member">
-        <h3>Heather Pye </h3>
-        <p> Treasurer</p>
-        <p>Email: <a href="mailto:-  ">
-          </div>
-    <div class="board-member">
-        <h3>Kim Hixon</h3>
-        <p>Secretary</p>
-        <p>Email: <a href="mailto:- Kimsands8@gmail.com ">Kimsands8@gmail.com 
-            </div>
-    <div class="board-member">
-        <h3>Kirby Dygert</h3>  
-        <p>Past President</p>
-        <p>Email: <a href="mailto:-kpalmer@ecfair.org">kpalmer@ecfair.org
-            </div>
-            <div class="gold-divider"><span></span></div>
-    <div class="board-member">
-        <h3>Scott Loomis</h3>
-        <p>Director</p>
-        </div>
-    <div class="board-member">
-        <h3>Jerry Klein</h3>
-        <p>Director</p>
-        </div>
-    <div class="board-member">
-        <h3>Sarah Judkiewicz</h3>
-        <p>Director</p>
-        </div>
-    <div class="board-member">
-        <h3>Barb Dygert</h3>
-        <p>Director</p>
-        </div>
-        <div class="gold-divider"><span></span></div>
-        <div class="board-member">
-        <h3>Kelly Hedges</h3>
-        <p>Appointed Director</p>
-        </div>
-        <div class="board-member">
-        <h3>Meagan Kuhn</h3>
-        <p>Appointed Director</p>
-        </div>
-<div class="gold-divider"><span></span></div>
-        <div class="board-member">
-        <h3>Kim Hedges</h3>
-        <p>Point Keeper</p>
-        <p>Email: <a href="mailto:-hedgesshowhorses@aol.com">hedgesshowhorses@aol.com</a></p>
-            </div>
+  <main>
+    <section id="board-members" class="board-section">
+      <div class="container">
+        <h1 class="page-title">Board Members</h1>
+        <p class="lead">Meet the dedicated individuals who serve on the Yankee Reining Horse Association Board of Directors.</p>
 
-<footer>
-    <img src="assets/logo.png" alt="YRHA Logo">
+        <div class="cards-container">
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Courtney Craig" class="card-img">
+            <h2 class="card-title">Courtney Craig</h2>
+            <p class="card-role">President</p>
+            <p class="card-contact"><a href="mailto:yrhacourtney@yahoo.com">yrhacourtney@yahoo.com</a></p>
+          </article>
 
+          <article class="card">
+            <img src="assets/man placeholder.jpeg" alt="Duke Dygert" class="card-img">
+            <h2 class="card-title">Duke Dygert</h2>
+            <p class="card-role">Vice President</p>
+            <p class="card-contact"><a href="mailto:rddygert@gmail.com">rddygert@gmail.com</a></p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Heather Pye" class="card-img">
+            <h2 class="card-title">Heather Pye</h2>
+            <p class="card-role">Treasurer</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Kim Hixon" class="card-img">
+            <h2 class="card-title">Kim Hixon</h2>
+            <p class="card-role">Secretary</p>
+            <p class="card-contact"><a href="mailto:Kimsands8@gmail.com">Kimsands8@gmail.com</a></p>
+          </article>
+
+          <article class="card">
+            <img src="assets/man placeholder.jpeg" alt="Kirby Dygert" class="card-img">
+            <h2 class="card-title">Kirby Dygert</h2>
+            <p class="card-role">Past President</p>
+            <p class="card-contact"><a href="mailto:kpalmer@ecfair.org">kpalmer@ecfair.org</a></p>
+          </article>
+
+          <article class="card">
+            <img src="assets/man placeholder.jpeg" alt="Scott Loomis" class="card-img">
+            <h2 class="card-title">Scott Loomis</h2>
+            <p class="card-role">Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/man placeholder.jpeg" alt="Jerry Klein" class="card-img">
+            <h2 class="card-title">Jerry Klein</h2>
+            <p class="card-role">Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/man placeholder.jpeg" alt="Sarah Judkiewicz" class="card-img">
+            <h2 class="card-title">Sarah Judkiewicz</h2>
+            <p class="card-role">Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Barb Dygert" class="card-img">
+            <h2 class="card-title">Barb Dygert</h2>
+            <p class="card-role">Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Kelly Hedges" class="card-img">
+            <h2 class="card-title">Kelly Hedges</h2>
+            <p class="card-role">Appointed Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Meagan Kuhn" class="card-img">
+            <h2 class="card-title">Meagan Kuhn</h2>
+            <p class="card-role">Appointed Director</p>
+            <p class="card-contact">—</p>
+          </article>
+
+          <article class="card">
+            <img src="assets/woman placeholder.jpeg" alt="Kim Hedges" class="card-img">
+            <h2 class="card-title">Kim Hedges</h2>
+            <p class="card-role">Point Keeper</p>
+            <p class="card-contact"><a href="mailto:hedgesshowhorses@aol.com">hedgesshowhorses@aol.com</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <img src="assets/logo.png" alt="YRHA logo" class="footer-logo">
     <h3>Yankee Reining Horse Association</h3>
 
-   
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="boardmembers.html">Board Members</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-
-    <p style="margin-top:20px;">© 2026 Yankee Reining Horse Association</p>
+    <p class="copyright">© 2026 Yankee Reining Horse Association</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
-
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav-links');
+    btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+  </script>
 </body>
 </html>
